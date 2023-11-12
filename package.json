@@ -40,9 +40,7 @@
     "vitest": "^0.34.6"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
-    "prepare-commit-msg": "exec < /dev/tty && node_modules/.bin/cz --hook || true",
-    "commit-msg": "npx commitlint -e $1"
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
